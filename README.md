@@ -1,7 +1,7 @@
-<h1 align="center"> Github Favorites </h1>
+<h1 align="center"> GitFav</h1>
 
 <p align="center">
-Repositório criado ao longo das aulas do Stage 06 da turma 09 do explorer, o objetivo era criar uma página que se conecta com a api do Github. <br/>
+Repositório criado a partir do desafio GitFav do Stage 06 da turma 09 do explorer, o objetivo aprimorar a estilização do desafio Github Favorites, criando uma página que se conecta com a api do Github. <br/>
 </p>
 
 <p align="center">
@@ -28,7 +28,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto consiste em uma página onde o usuário poderá consultar um usuário do Github e terá o retorno dos seguintes dados: nome, usuário, número de repositórios e número de seguidores.
 
-- [Visite o projeto online](https://githubfavorites-raulrodmo.netlify.app/)
+- [Visite o projeto online]()
+
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/SzQA07HwmSPj4hOYgu1Pps/%5BDesafios-Explorer%5D-GitFav/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
