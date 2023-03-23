@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto consiste em uma página onde o usuário poderá consultar um usuário do Github e terá o retorno dos seguintes dados: nome, usuário, número de repositórios e número de seguidores.
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://gitfav-raulrodmo.netlify.app/)
 
 ## 🔖 Layout
 
