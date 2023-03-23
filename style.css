@@ -58,6 +58,13 @@ header{
   background-color: var(--background-search-and-tbody-odd);
   border: none;
   border-radius: 5px;
+
+  transition: 500ms;
+}
+
+.search input:hover{
+  background-color: var(--background-thead);
+  transition: 700ms;
 }
 
 .search button{
@@ -77,6 +84,19 @@ header{
   gap:.8rem;
 
   cursor: pointer;
+  transition: 500ms;
+}
+
+.search button:hover{
+  color: var(--background-button);
+  background: var(--text-color);
+ 
+  transition: 700ms;
+}
+
+.search button:hover svg path{
+  fill: var(--background-button);
+  transition: 700ms;
 }
 
 .sr-only{
@@ -142,10 +162,16 @@ td.user img{
 td.user a{
   text-decoration: none;
   font-weight: 400;
+  transition: 500ms;
 }
 
 td.user a p{
   font-weight: bold;
+}
+
+td.user a:hover{
+  scale: 1.08;
+  transition: 700ms;
 }
 
 td .remove{
@@ -158,4 +184,11 @@ td .remove{
   color: red;
 
   cursor: pointer;
+
+  transition: 500ms;
+}
+
+td .remove:hover{
+  scale: 1.08;
+  transition: 700ms;
 }
