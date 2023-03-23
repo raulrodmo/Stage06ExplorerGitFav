@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-primary);
+  color: var(--text-color);
+}
+
+:root{
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --text-color: #E1E1E6;
+  --text-color-secundary: #7C7C8A;
+  --text-color-remove:#F75A68;
+
+  --background-body: #000000;
+  --background-button: #065E7C;
+  --background-search-and-tbody-odd: #06181C;
+  --background-thead: #092D38;
+  --background-tbody-even: rgba(6, 22, 27, 0.5);
+  --background-navbar-and-border-table: #4A808C;
+}
+
+body{
+  background: var(--background-body);
+}
+
+#app{
+  margin: 11.5rem 16rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img{
+  width: 18.62rem;
+  height: 3.27rem;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input{
+  width: 43rem;
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+
+  background-color: var(--background-search-and-tbody-odd);
+  border: none;
+  border-radius: 5px;
+}
+
+.search button{
+  padding: 1.2rem 3.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background: var(--background-button);
+
+
+  border: none;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  gap:.8rem;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+table{
+  width: 100%;
+  margin-top: 8.7rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+
+  text-align: left;
+  border: 1px solid var(--background-navbar-and-border-table);
+  border-collapse: collapse;
+}
+
+table th{
+  padding: 1.6rem 4rem;
+  background-color: var(--background-thead);
+}
+
+table tr:nth-child(even){
+  background: var(--background-tbody-even);
+}
+
+table tr:nth-child(odd) {
+  background: var(--background-search-and-tbody-odd);
+}
+
+tbody tr{
+  border-bottom: 1px solid var(--background-navbar-and-border-table);
+}
+
+table td{
+  padding: 2.4rem 4rem;
+}
+
+td.user{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img{
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a{
+  text-decoration: none;
+  font-weight: 400;
+}
+
+td.user a p{
+  font-weight: bold;
+}
+
+td .remove{
+  background: none;
+  border: none;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: red;
+
+  cursor: pointer;
+}
