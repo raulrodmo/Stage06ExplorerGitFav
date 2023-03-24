@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,13 +6,13 @@
   color: var(--text-color);
 }
 
-:root{
+:root {
   font-size: 62.5%;
 
   --ff-primary: 'Roboto', sans-serif;
   --text-color: #E1E1E6;
   --text-color-secundary: #7C7C8A;
-  --text-color-remove:#F75A68;
+  --text-color-remove: #F75A68;
 
   --background-body: #000000;
   --background-button: #065E7C;
@@ -22,32 +22,32 @@
   --background-navbar-and-border-table: #4A808C;
 }
 
-body{
+body {
   background: var(--background-body);
 }
 
-#app{
+#app {
   margin: 11.5rem 16rem;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo img{
+.logo img {
   width: 18.62rem;
   height: 3.27rem;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   gap: .8rem;
 }
 
-.search input{
+.search input {
   width: 43rem;
   padding: 1.6rem;
 
@@ -62,12 +62,12 @@ header{
   transition: 500ms;
 }
 
-.search input:hover{
+.search input:hover {
   background-color: var(--background-thead);
   transition: 700ms;
 }
 
-.search button{
+.search button {
   padding: 1.2rem 3.2rem;
 
   font-size: 1.4rem;
@@ -81,37 +81,37 @@ header{
 
   display: flex;
   align-items: center;
-  gap:.8rem;
+  gap: .8rem;
 
   cursor: pointer;
   transition: 500ms;
 }
 
-.search button:hover{
+.search button:hover {
   color: var(--background-button);
   background: var(--text-color);
- 
+
   transition: 700ms;
 }
 
-.search button:hover svg path{
+.search button:hover svg path {
   fill: var(--background-button);
   transition: 700ms;
 }
 
-.sr-only{
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
 
-.table{
+.table {
   min-width: 100%;
   width: fit-content;
 
@@ -122,7 +122,7 @@ header{
   overflow: hidden;
 }
 
-table{
+table {
   width: 100%;
 
   font-size: 2rem;
@@ -133,12 +133,12 @@ table{
   border-collapse: collapse;
 }
 
-table th{
+table th {
   padding: 1.6rem 4rem;
   background-color: var(--background-thead);
 }
 
-table tr:nth-child(even){
+table tr:nth-child(even) {
   background: var(--background-tbody-even);
 }
 
@@ -146,41 +146,49 @@ table tr:nth-child(odd) {
   background: var(--background-search-and-tbody-odd);
 }
 
-table th:first-child{
+table th:first-child {
   border-top-left-radius: 30px;
 }
 
-table th:last-child{
+table th:last-child {
   border-top-right-radius: 30px;
 }
 
-table tbody tr{
+table tbody tr {
   border-bottom: 1px solid var(--background-navbar-and-border-table);
 }
 
-table tbody tr:last-child{
+table tbody tr:last-child {
   border: none;
 }
 
-table tbody tr:last-child td:first-child{
-  border-bottom-left-radius: 30px; 
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 30px;
 }
 
-table tbody tr:last-child td:last-child{
-  border-bottom-right-radius: 30px; 
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 30px;
 }
 
-table td{
+table td {
   padding: 2.4rem 4rem;
 }
 
-td.user{
+td.user {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  transition: 500ms;
 }
 
-td.user img{
+td.user:hover {
+  scale: 1.2;
+  transition: 700ms;
+}
+
+td.user img {
   width: 5rem;
   height: 5rem;
 
@@ -188,22 +196,16 @@ td.user img{
   border-radius: 50%;
 }
 
-td.user a{
+td.user a {
   text-decoration: none;
   font-weight: 400;
-  transition: 500ms;
 }
 
-td.user a p{
+td.user a p {
   font-weight: bold;
 }
 
-td.user a:hover{
-  scale: 1.08;
-  transition: 700ms;
-}
-
-td .remove{
+td .remove {
   background: none;
   border: none;
 
@@ -217,7 +219,7 @@ td .remove{
   transition: 500ms;
 }
 
-td .remove:hover{
-  scale: 1.08;
+td .remove:hover {
+  scale: 1.2;
   transition: 700ms;
 }
