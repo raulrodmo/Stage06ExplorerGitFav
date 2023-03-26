@@ -11,6 +11,7 @@
 
   --ff-primary: 'Roboto', sans-serif;
   --text-color: #E1E1E6;
+  --text-color-tbody-empty: #4E5455;
   --text-color-secundary: #7C7C8A;
   --text-color-remove: #F75A68;
 
@@ -148,6 +149,31 @@ table tr:nth-child(odd) {
   background: var(--background-search-and-tbody-odd);
 }
 
+.empty th:first-child{
+  height: 67rem;
+  background: var(--background-search-and-tbody-odd);
+}
+
+.empty th:first-child div{
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  line-height: 2.47rem;
+
+  color: var(--text-color-tbody-empty);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  position: relative;
+  top: -5rem;
+}
+
+.empty th img{
+  width: 13.2rem;
+  height: 12.5rem;
+}
+
 table tbody tr {
   border-bottom: 1px solid var(--background-navbar-and-border-table);
 }
@@ -212,10 +238,13 @@ td .remove:hover {
 
 .table::-webkit-scrollbar {
   width: .6rem;
-  height: 12.2rem;
 }
 
 .table::-webkit-scrollbar-thumb {
-  background-color: var(--background-navbar-and-border-table);
   border-radius: 10px;
+  background-color: var(--background-navbar-and-border-table);
+}
+
+.hide{
+  display: none;
 }

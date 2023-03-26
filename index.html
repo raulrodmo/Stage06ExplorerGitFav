@@ -11,7 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
 
@@ -35,17 +35,26 @@
 
         <table>
           <thead>
-          <tr>
-            <th>Usuário</th>
-            <th>Repositories</th>
-            <th>Followers</th>
-            <th>Ação</th>
-          </tr>
-        </thead>
-        <div class="tbody">
-          <tbody>
-          </tbody>  
-        </div>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositories</th>
+              <th>Followers</th>
+              <th>Ação</th>
+            </tr>
+            <tr class="empty">
+              <th colspan="4">
+                <div>
+                <img src="./assets/star.svg" alt="">
+                Nenhum favorito ainda
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <div class="tbody">
+            <tbody>
+
+            </tbody>  
+          </div>
       </table>
 
     </div>
