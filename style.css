@@ -149,12 +149,12 @@ table tr:nth-child(odd) {
   background: var(--background-search-and-tbody-odd);
 }
 
-.empty th:first-child{
+.empty th:first-child {
   height: 67rem;
   background: var(--background-search-and-tbody-odd);
 }
 
-.empty th:first-child div{
+.empty th:first-child div {
   font-family: 'Roboto Mono';
   font-size: 4rem;
   line-height: 2.47rem;
@@ -169,7 +169,7 @@ table tr:nth-child(odd) {
   top: -5rem;
 }
 
-.empty th img{
+.empty th img {
   width: 13.2rem;
   height: 12.5rem;
 }
@@ -245,6 +245,6 @@ td .remove:hover {
   background-color: var(--background-navbar-and-border-table);
 }
 
-.hide{
+.hide {
   display: none;
 }

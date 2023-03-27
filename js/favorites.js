@@ -14,6 +14,20 @@ export class Favorites {
     localStorage.setItem('@github-favorites', JSON.stringify(this.entries))
   }
 
+  countRows(){
+    const userEmpty = document.querySelector('.empty')
+    const table = this.root.querySelector('table')
+    const countRows = table.rows.length;
+    //const userEmpty = document.querySelector('.empty')
+
+    console.log(countRows)
+    if(countRows >2){
+      userEmpty.classList.add('hide')
+    } else(
+      userEmpty.classList.remove('hide')
+    )
+  }
+
   async add(username){
     try {
 
@@ -31,14 +45,12 @@ export class Favorites {
 
       this.entries = [user, ...this.entries]
       this.update()
+      this.countRows()
       this.save()
 
     } catch(error) {
       alert(error.message)
     }
-
-    this.countRows()
-
   }
 
   delete(user) {
@@ -46,8 +58,8 @@ export class Favorites {
 
     this.entries = filteredEntries
     this.update()
-    this.save()
     this.countRows()
+    this.save()
   }
 }
 
@@ -58,6 +70,7 @@ export class FavoritesView extends Favorites{
     this.tbody = this.root.querySelector('table tbody')
 
     this.update()
+    this.countRows()
 
     this.onAdd()
   }
@@ -124,19 +137,4 @@ export class FavoritesView extends Favorites{
       tr.remove()
     })
   }
-
-  countRows(){
-    const userEmpty = document.querySelector('.empty')
-    const table = this.root.querySelector('table')
-    const countRows = table.rows.length;
-    //const userEmpty = document.querySelector('.empty')
-    if(countRows >2){
-      userEmpty.classList.add('hide')
-    } else(
-      userEmpty.classList.remove('hide')
-    )
-  }
 }
-/*
-
-  */
